@@ -77,9 +77,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/Features.mkdn:system/etc/RR/Features.txt
 
-# NexusLauncher
+# NovaLauncher
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/NexusLauncher/NexusLauncher.apk:system/app/NexusLauncher/NexusLauncher.apk
+    vendor/cm/prebuilt/NovaLauncher/NovaLauncher.apk:system/app/NovaLauncher/NovaLauncher.apk
 
 # Wallpaper
 PRODUCT_COPY_FILES += \
@@ -163,6 +163,11 @@ PRODUCT_PACKAGES += \
     Profiles \
     WeatherManagerService
 
+# Required Pixel packages
+PRODUCT_PACKAGES += \
+    KernelAdiutor \
+    FloatingActionButton
+
 # Optional CM packages
 PRODUCT_PACKAGES += \
     libemoji \
@@ -177,10 +182,7 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    Launcher3 \
     ResurrectionOTA \
-    ResurrectionStats \
-    Trebuchet \
     MusicFX \
     CMFileManager \
     Eleven \
@@ -189,7 +191,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
-	OmniSwitch \
+    OmniSwitch \
     SoundRecorder \
     Screencast
 
@@ -293,7 +295,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION = 5.8.0
-    CM_VERSION := ResurrectionRemix-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+    CM_VERSION := PixelDroid-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(CM_VERSION) \
