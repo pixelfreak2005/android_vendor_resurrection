@@ -183,6 +183,7 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     ResurrectionOTA \
+    ResurrectionStats \
     MusicFX \
     CMFileManager \
     Eleven \
