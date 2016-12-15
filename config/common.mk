@@ -164,9 +164,9 @@ PRODUCT_PACKAGES += \
     WeatherManagerService
 
 # Required Pixel packages
-PRODUCT_PACKAGES += \
-    KernelAdiutor \
-    FloatingActionButton
+#PRODUCT_PACKAGES += \
+#    KernelAdiutor \
+#    FloatingActionButton
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
