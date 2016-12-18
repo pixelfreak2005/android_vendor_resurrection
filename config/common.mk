@@ -294,18 +294,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION = 5.8.0
-RR_BUILDTYPE ?= UNOFFICIAL
-CM_VERSION := ResurrectionRemix-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(RR_BUILDTYPE)
+PRODUCT_VERSION = 7.1_r6
+CM_VERSION := PixelDroid-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
- ro.rr.version=$(CM_VERSION) \
+ ro.pixeldroid.version=$(CM_VERSION) \
  ro.modversion=$(CM_VERSION) \
- rr.ota.version= $(shell date -u +%Y%m%d) \
- ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
- ro.romstats.name=ResurrectionRemix \
- ro.romstats.version=$(PRODUCT_VERSION) \
- ro.romstats.tframe=7 
+ rr.ota.version= $(shell date -u +%Y%m%d)
 
 ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
     PRODUCT_EXTRA_RECOVERY_KEYS += \
