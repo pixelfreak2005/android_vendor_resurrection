@@ -300,7 +300,7 @@ CM_VERSION := PixelDroid-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUI
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.pixeldroid.version=$(CM_VERSION) \
  ro.modversion=$(CM_VERSION) \
- rr.ota.version= $(shell date -u +%Y%m%d)
+ pixeldroid.ota.version= $(shell date -u +%Y%m%d)
 
 ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
     PRODUCT_EXTRA_RECOVERY_KEYS += \
@@ -311,7 +311,7 @@ endif
 CM_DISPLAY_VERSION := $(CM_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.rr.display.version=$(CM_DISPLAY_VERSION)
+  ro.pixeldroid.display.version=$(CM_DISPLAY_VERSION)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/cm/config/partner_gms.mk
