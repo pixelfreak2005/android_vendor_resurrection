@@ -295,7 +295,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION = 7.1.1_r6
-CM_VERSION := PixelDroid-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+RR_BUILDTYPE ?= UNOFFICIAL
+CM_VERSION := PixelDroid-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(PF_BUILDTYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.pixeldroid.version=$(CM_VERSION) \
