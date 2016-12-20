@@ -11,14 +11,14 @@ echo -e ${cya}" 〉3- Nightly"${txtrst}
 echo -e "";
 echo -e ${cya}" 〉4- Weekly"${txtrst}
 echo -e "";
-echo -e ${red}" 〉30/sec Time-out (official)"${txtrst}
+echo -e ${red}" 〉30/sec Time-out (unofficial)"${txtrst}
 echo -e "";
 $normal
 read -t 30 askvariant || autovariant=1
 sleep 1
 if [ "$autovariant" == "1" ]
 then
-RR_BUILDTYPE=official
+RR_BUILDTYPE=unofficial
 $normal
 sleep 1
 fi
@@ -26,7 +26,7 @@ if [ "$askvariant" == "1" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building official variant "${txtrst}
-RR_BUILDTYPE=official
+RR_BUILDTYPE=unofficial
 echo -e "";
 echo -e "";
 $normal
