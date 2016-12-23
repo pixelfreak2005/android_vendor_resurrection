@@ -295,8 +295,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION = 7.1.1_r6
-PF_BUILDTYPE ?= OFFICIAL
+ifneq ($(PF_BUILDTYPE),)
 CM_VERSION := PF-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(PF_BUILDTYPE)
+else
+CM_VERSION := PF-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.pixeldroid.version=$(CM_VERSION) \
