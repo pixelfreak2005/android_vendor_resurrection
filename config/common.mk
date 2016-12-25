@@ -304,6 +304,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.pixeldroid.version=$(CM_VERSION) \
  ro.modversion=$(CM_VERSION) \
+ pf.build.type=$(PF_BUILDTYPE) \
  pixeldroid.ota.version= $(shell date -u +%Y%m%d)
 
 ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
