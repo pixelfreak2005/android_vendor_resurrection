@@ -38,6 +38,8 @@ echo -e ${blu}" 〉 6- Milestone "${txtrst}${red}"   ︱ Only for the milestone 
 echo -e "";
 echo -e ${blu}" 〉 7- Final "${txtrst}${red}"       ︱ Only for the final releases by the PF-team"${xtrst}
 echo -e "";
+echo -e ${blu}" 〉 8- Xmas "${txtrst}${red}"        ︱ Christmas exclusive before holiday build "${xtrst}
+echo -e "";
 echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ Default option"${txtrst}
 echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
@@ -49,7 +51,7 @@ if [ "$askvariant" == "1" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building official variant "${txtrst}
-export PF_BUILDTYPE=official
+export PF_BUILDTYPE=Official
 echo -e "";
 echo -e "";
 $normal
@@ -59,7 +61,7 @@ if [ "$askvariant" == "2" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building unofficial variant "${txtrst}
-export PF_BUILDTYPE=unofficial
+export PF_BUILDTYPE=Unofficial
 echo -e "";
 echo -e "";
 $normal
@@ -69,7 +71,7 @@ if [ "$askvariant" == "3" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building nightly variant "${txtrst}
-export PF_BUILDTYPE=nightly
+export PF_BUILDTYPE=Nightly
 echo -e "";
 echo -e "";
 $normal
@@ -79,7 +81,7 @@ if [ "$askvariant" == "4" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building weekly variant "${txtrst}
-export PF_BUILDTYPE=weekly
+export PF_BUILDTYPE=Weekly
 echo -e "";
 echo -e "";
 $normal
@@ -89,7 +91,7 @@ if [ "$askvariant" == "5" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building release variant "${txtrst}
-export PF_BUILDTYPE=release
+export PF_BUILDTYPE=Release
 echo -e "";
 echo -e "";
 $normal
@@ -99,7 +101,7 @@ if [ "$askvariant" == "6" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building milestone variant "${txtrst}
-export PF_BUILDTYPE=milestone
+export PF_BUILDTYPE=Milestone
 echo -e "";
 echo -e "";
 $normal
@@ -109,7 +111,17 @@ if [ "$askvariant" == "7" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building final variant "${txtrst}
-export PF_BUILDTYPE=final
+export PF_BUILDTYPE=Final
+echo -e "";
+echo -e "";
+$normal
+sleep 1
+fi
+if [ "$askvariant" == "8" ]
+then
+echo -e "";
+echo -e ${blu}" ▪ Building Xmas variant "${txtrst}
+export PF_BUILDTYPE=Xmas
 echo -e "";
 echo -e "";
 $normal
