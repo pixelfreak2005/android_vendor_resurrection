@@ -294,6 +294,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION = 5.8.0
+RR_BUILDDTYPE = Default
 ifneq ($(RR_BUILDTYPE),)
 CM_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(RR_BUILDTYPE)
 else
@@ -304,6 +305,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(CM_VERSION) \
  ro.modversion=$(CM_VERSION) \
  rr.build.type=$(RR_BUILDTYPE) \
+ rr.build.dtype=$(RR_BUILDDTYPE) \
  rr.ota.version= $(shell date -u +%Y%m%d) \
  ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
  ro.romstats.name=ResurrectionRemix \
