@@ -193,7 +193,8 @@ PRODUCT_PACKAGES += \
     WeatherProvider \
     OmniSwitch \
     SoundRecorder \
-    Screencast
+    Screencast \
+    masquerade
 
 # Exchange support
 PRODUCT_PACKAGES += \

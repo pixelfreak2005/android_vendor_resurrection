@@ -43,7 +43,8 @@ touch $Changelog
 
 # ask for days and version
 echo ""
-echo ${cya}"〉 Generating $source_name (for last 30 days) Changelog.."${txtrst}
+echo ${cya}" ▼ Generating (for last 30 days) github format changelog.."${txtrst}
+echo ""
 echo >> $Changelog;
 echo "# $source_name Version 5.8.0 Changelog"    >> $Changelog;
 echo '====================================================' >> $Changelog;
@@ -51,12 +52,13 @@ echo >> $Changelog;
 
 cd $HOME/$source_tree
 
-for i in $(seq 10);
+for i in $(seq 30);
 do
 export After_Date=`date --date="$i days ago" +%m-%d-%Y`
 k=$(expr $i - 1)
 	export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
-	echo ${ylw}"〉 Generating day number:$i $Until_Date.."${txtrst}
+	echo ""
+	echo ${ylw}" 〉 Generating day number $i ▪ $Until_Date.."${txtrst}
 	source=$(repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date');
 
 	if [ -n "${source##+([:space:])}" ]; then
@@ -77,5 +79,7 @@ then
 	echo "$(cat $Temp_Changelog)\n$(cat $Changelog)" > $Changelog
 	rm -f $Temp_Changelog
 fi
-
-echo ${grn}"\n√ Changelog generated\n"${txtrst}
+echo ""
+echo ${grn}" √ Changelog successfully generated."${txtrst}
+echo ""
+echo ""
