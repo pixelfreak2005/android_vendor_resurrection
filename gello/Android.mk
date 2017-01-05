@@ -35,7 +35,6 @@ endif
 LOCAL_SRC_FILES := ../../../external/gello-build/Gello.apk
 include $(BUILD_PREBUILT)
 else
-ifeq ($(THEY_FIXED_GELLO),true)
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
@@ -48,5 +47,4 @@ LOCAL_MAVEN_ARTIFACT := gello
 LOCAL_MAVEN_PACKAGING := apk
 
 include $(BUILD_MAVEN_PREBUILT)
-endif
 endif
