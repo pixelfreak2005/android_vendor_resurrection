@@ -308,12 +308,12 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.pixeldroid.version=$(RR_VERSION) \
- ro.modversion=$(RR_VERSION) \
+ ro.modversion=$(PF_VERSION) \
  pf.build.type=$(PF_BUILDTYPE) \
  Default \
  pixeldroid.ota.version= $(shell date -u +%Y%m%d)
 
-CM_DISPLAY_VERSION := $(RR_VERSION)
+CM_DISPLAY_VERSION := $(PF_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.pixeldroid.display.version=$(CM_DISPLAY_VERSION)
