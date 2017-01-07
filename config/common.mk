@@ -301,22 +301,22 @@ DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION = 7.1.1_r6
 ifneq ($(PF_BUILDTYPE),)
-RR_VERSION := PF-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(PF_BUILDTYPE)
+PF_VERSION := PF-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(PF_BUILDTYPE)
 else
-RR_VERSION := PF-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+PF_VERSION := PF-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
- ro.pixeldroid.version=$(RR_VERSION) \
+ ro.pf.version=$(PF_VERSION) \
  ro.modversion=$(PF_VERSION) \
  pf.build.type=$(PF_BUILDTYPE) \
  Default \
- pixeldroid.ota.version= $(shell date -u +%Y%m%d)
+ pf.ota.version= $(shell date -u +%Y%m%d)
 
 CM_DISPLAY_VERSION := $(PF_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.pixeldroid.display.version=$(CM_DISPLAY_VERSION)
+  ro.pf.display.version=$(CM_DISPLAY_VERSION)
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
   vendor/cm/build/target/product/security/lineage
