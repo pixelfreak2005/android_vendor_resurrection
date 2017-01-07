@@ -313,13 +313,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
  Default \
  pixeldroid.ota.version= $(shell date -u +%Y%m%d)
 
-ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
-    PRODUCT_EXTRA_RECOVERY_KEYS += \
-        vendor/cm/build/target/product/security/cm \
-        vendor/cm/build/target/product/security/cm-devkey
-
 CM_DISPLAY_VERSION := $(RR_VERSION)
- 
+
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.pixeldroid.display.version=$(CM_DISPLAY_VERSION)
 
@@ -331,4 +326,3 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 -include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
-endif
