@@ -331,3 +331,4 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 -include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
+endif
