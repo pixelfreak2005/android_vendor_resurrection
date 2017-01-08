@@ -2,8 +2,17 @@
 # PixelDroid N Version 7.1.x Changelog
 ====================================================
 
-01/08/2017
+01-08-2017
 ============
+
+#### build/
+* 707fd27 Fix zip title
+* 90f4763 build: Replace pushd with cd
+* bd8aeb4 lunch: Use cd - instead of popd
+* 8a70ece envsetup: Tweak nested executed commands
+* 04c8bb8 envsetup: Combine nested else; if into elif in check_product()
+* 072ee2e build: core: Rebrand CM_VERSION to LINEAGE_VERSION
+* 8a73a81 build: support lineage device trees
 
 #### android/
 * 55c7981 r9
