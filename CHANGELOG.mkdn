@@ -11,6 +11,7 @@
 
 #### build/
 * f4a783d NMF26V
+* f0c7213 2017-01-05
 * a7510f5 Update dumpvar.mk
 * e1a79f5 Update ota_from_target_files.py
 * 39f1d07 Update Makefile
