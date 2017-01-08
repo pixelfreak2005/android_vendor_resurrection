@@ -2,244 +2,421 @@
 # PixelDroid N Version 7.1.x Changelog
 ====================================================
 
- ▼ 01/08/2017
+01/08/2017
+============
 
+#### android/
+* 55c7981 r9
+* 013eb04 Update README.mkdn
 
- ▪ project android/
- ▪ 55c7981 r9
- ▪ 013eb04 Update README.mkdn
+#### build/
+* f4a783d NMF26V
+* a7510f5 Update dumpvar.mk
+* e1a79f5 Update ota_from_target_files.py
+* 39f1d07 Update Makefile
+* 1ca71ed Update envsetup.sh
+* b6a2255 Update dumpvar.mk
+* 4581a1c Update dumpvar.mk
+* 34c7687 Update Makefile
+* fa5d09c Update envsetup.sh
+* f6883b6 Update product_config.mk
 
- ▪ project build/
- ▪ f4a783d NMF26V
- ▪ a7510f5 Update dumpvar.mk
- ▪ e1a79f5 Update ota_from_target_files.py
- ▪ 39f1d07 Update Makefile
- ▪ 1ca71ed Update envsetup.sh
- ▪ b6a2255 Update dumpvar.mk
- ▪ 4581a1c Update dumpvar.mk
- ▪ 34c7687 Update Makefile
- ▪ fa5d09c Update envsetup.sh
- ▪ f6883b6 Update product_config.mk
+#### device/oppo/common/
+* dc0b136 lineage
 
- ▪ project device/oppo/common/
- ▪ dc0b136 lineage
+#### device/oppo/msm8939-common/
+* 40865d3 Merge pull request #1 from LineageOS/cm-14.1
 
- ▪ project device/oppo/msm8939-common/
- ▪ 40865d3 Merge pull request #1 from LineageOS/cm-14.1
+#### external/icu/
+* 554db26 Merge tag 'android-7.1.1_r9' into cm-14.1
 
- ▪ project external/icu/
- ▪ 554db26 Merge tag 'android-7.1.1_r9' into cm-14.1
+#### frameworks/base/
+* 0b5a814 Merge pull request #56 from ResurrectionRemix/nougat
+* f827dbc Automatic translation import
+* f3426d5 Merge pull request #54 from ResurrectionRemix/nougat
+* 6c30f1d Automatic translation import
 
- ▪ project frameworks/base/
- ▪ 0b5a814 Merge pull request #56 from ResurrectionRemix/nougat
- ▪ f827dbc Automatic translation import
- ▪ f3426d5 Merge pull request #54 from ResurrectionRemix/nougat
- ▪ 6c30f1d Automatic translation import
+#### frameworks/native/
+* cc92c1b Merge tag 'android-7.1.1_r9' into cm-14.1
 
- ▪ project frameworks/native/
- ▪ cc92c1b Merge tag 'android-7.1.1_r9' into cm-14.1
+#### hardware/qcom/audio-caf/msm8960/
+* 5e95ac2 hal: Additional checks for dedicated VOIP input
 
- ▪ project hardware/qcom/audio-caf/msm8960/
- ▪ 5e95ac2 hal: Additional checks for dedicated VOIP input
+#### hardware/qcom/audio/default/
+* 584bfb8 Merge tag 'android-7.1.1_r9' into cm-14.1
 
- ▪ project hardware/qcom/audio/default/
- ▪ 584bfb8 Merge tag 'android-7.1.1_r9' into cm-14.1
+#### packages/apps/CMParts/
+* 725c7fa CMParts: Match pulse speed to frameworks default
+* 714be45 Fix handling of auto power save summary.
+* b151d5d CMParts: Properly fix auto-power-save string format exception
+* 7131c1d CMParts: rebrand to LineageOS
+* ecf966c Automatic translation import
+* e339229 CMParts: statusbar: Enable notification icon count by default
+* 4766948 CMParts: fix untranslatable translation
+* 9bb4957 Automatic translation import
 
- ▪ project packages/apps/CMParts/
- ▪ 725c7fa CMParts: Match pulse speed to frameworks default
- ▪ 714be45 Fix handling of auto power save summary.
- ▪ b151d5d CMParts: Properly fix auto-power-save string format exception
- ▪ 7131c1d CMParts: rebrand to LineageOS
- ▪ ecf966c Automatic translation import
- ▪ e339229 CMParts: statusbar: Enable notification icon count by default
- ▪ 4766948 CMParts: fix untranslatable translation
- ▪ 9bb4957 Automatic translation import
+#### packages/apps/Calendar/
+* cdfc529 Calendar: String improvements
 
- ▪ project packages/apps/Calendar/
- ▪ cdfc529 Calendar: String improvements
+#### packages/apps/ContactsCommon/
+* 6e8cff6 Merge tag 'android-7.1.1_r9' into cm-14.1
 
- ▪ project packages/apps/ContactsCommon/
- ▪ 6e8cff6 Merge tag 'android-7.1.1_r9' into cm-14.1
+#### packages/apps/Dialer/
+* b17617c Automatic translation import
+* 86c8de1 Automatic translation import
+* 271a8a0 Automatic translation import
+* 52544c4 Automatic translation import
 
- ▪ project packages/apps/Dialer/
- ▪ b17617c Automatic translation import
- ▪ 86c8de1 Automatic translation import
- ▪ 271a8a0 Automatic translation import
- ▪ 52544c4 Automatic translation import
+#### packages/apps/OmniSwitch/
+* 7df8752 Automatic translation import
 
- ▪ project packages/apps/OmniSwitch/
- ▪ 7df8752 Automatic translation import
+#### packages/apps/PixelDroidOTA/
+* 3ca728b small update
+* 500f27c Update ota_conf
+* 62f5f95 Update ota_conf
 
- ▪ project packages/apps/PixelDroidOTA/
- ▪ 3ca728b small update
- ▪ 500f27c Update ota_conf
- ▪ 62f5f95 Update ota_conf
+#### packages/apps/Settings/
+* 59d212c Merge pull request #9 from ResurrectionRemix/nougat
+* a65b818 Automatic translation import
+* 380bd7e Merge pull request #8 from ResurrectionRemix/nougat
+* 898075a Automatic translation import
+* b20a2cb Merge pull request #7 from ResurrectionRemix/nougat
+* 0e5b351 Bluetooth/Wifi: center empty view and set textAppearance to medium
+* 6f29fae [2/2] settings: support setting a separate encryption password
 
- ▪ project packages/apps/Settings/
- ▪ 59d212c Merge pull request #9 from ResurrectionRemix/nougat
- ▪ a65b818 Automatic translation import
- ▪ 380bd7e Merge pull request #8 from ResurrectionRemix/nougat
- ▪ 898075a Automatic translation import
- ▪ b20a2cb Merge pull request #7 from ResurrectionRemix/nougat
- ▪ 0e5b351 Bluetooth/Wifi: center empty view and set textAppearance to medium
- ▪ 6f29fae [2/2] settings: support setting a separate encryption password
+#### packages/services/Telecomm/
+* f5f30ae Telecomm: Fix error due to protected broadcast
 
- ▪ project packages/services/Telecomm/
- ▪ f5f30ae Telecomm: Fix error due to protected broadcast
+#### packages/services/Telephony/
+* 7c13af2 Telephony: Further improve network selection
+* 09a5e83 Telephony: Improve NetworkSelection
 
- ▪ project packages/services/Telephony/
- ▪ 7c13af2 Telephony: Further improve network selection
- ▪ 09a5e83 Telephony: Improve NetworkSelection
+#### system/sepolicy/
+* 794dbf1 fix denials for rootfs:lnk_file
 
- ▪ project system/sepolicy/
- ▪ 794dbf1 fix denials for rootfs:lnk_file
+#### vendor/cm/
+* 006bec3 Update common.mk
+* 1ebdbb8 Update common.mk
+* 43069e2 Update common.mk
+* 6972208 Update common.mk
+* 585ba15 Update common.mk
+* b878c2b Update common.mk
+* b0348f7 Update Android.mk
+* 7273e90 insert new smali files
+* a3ba49b delete old smali files
+* 13f9218 Update common.mk
+* 187a9f8 Update Android.mk
+* 8ba9f71 Update common.mk
+* 8083b03 Update roomservice.py
+* 6a19e50 Create getb64key.py
+* 1f56dff Update extract_utils.sh
+* 9200ac1 Delete cm.x509.pem
+* 35215e1 Delete cm-devkey.x509.pem
+* 49fa89d Create lineage.x509.pem
+* 1dac4e5 Update envsetup.sh
+* 7271586 Create http_prebuilt.mk
+* 7c3eecd Update config.mk
 
- ▪ project vendor/cm/
- ▪ 006bec3 Update common.mk
- ▪ 1ebdbb8 Update common.mk
- ▪ 43069e2 Update common.mk
- ▪ 6972208 Update common.mk
- ▪ 585ba15 Update common.mk
- ▪ b878c2b Update common.mk
- ▪ b0348f7 Update Android.mk
- ▪ 7273e90 insert new smali files
- ▪ a3ba49b delete old smali files
- ▪ 13f9218 Update common.mk
- ▪ 187a9f8 Update Android.mk
- ▪ 8ba9f71 Update common.mk
- ▪ 8083b03 Update roomservice.py
- ▪ 6a19e50 Create getb64key.py
- ▪ 1f56dff Update extract_utils.sh
- ▪ 9200ac1 Delete cm.x509.pem
- ▪ 35215e1 Delete cm-devkey.x509.pem
- ▪ 49fa89d Create lineage.x509.pem
- ▪ 1dac4e5 Update envsetup.sh
- ▪ 7271586 Create http_prebuilt.mk
- ▪ 7c3eecd Update config.mk
+01/07/2017
+============
 
- ▼ 01/07/2017
+#### device/oppo/msm8939-common/
+* f440da0 sensors: Fix static analysis tool issues
 
+#### frameworks/base/
+* 59c1733 Automatic translation import
+* 510e98d Automatic translation import
 
- ▪ project device/oppo/msm8939-common/
- ▪ f440da0 sensors: Fix static analysis tool issues
+#### hardware/qcom/audio-caf/msm8916/
+* d414d15 hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH
 
- ▪ project frameworks/base/
- ▪ 59c1733 Automatic translation import
- ▪ 510e98d Automatic translation import
+#### hardware/qcom/audio-caf/msm8974/
+* becbb2f hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH
 
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ d414d15 hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH
+#### packages/apps/Dialer/
+* cefb74a Automatic translation import
 
- ▪ project hardware/qcom/audio-caf/msm8974/
- ▪ becbb2f hal: Dynamically load the correct path for HUAWEI_SOUND_PARAM_PATH
+#### packages/apps/OmniSwitch/
+* 812a34c Automatic translation import
 
- ▪ project packages/apps/Dialer/
- ▪ cefb74a Automatic translation import
+#### packages/apps/Settings/
+* 1c032d2 Automatic translation import
 
- ▪ project packages/apps/OmniSwitch/
- ▪ 812a34c Automatic translation import
+01/06/2017
+============
 
- ▪ project packages/apps/Settings/
- ▪ 1c032d2 Automatic translation import
+#### frameworks/base/
+* 889a1ca set AnimationScale to 0.0
+* 28e30ed Merge pull request #52 from ResurrectionRemix/nougat
+* 0e9859f Automatic translation import
 
- ▼ 01/06/2017
+#### hardware/qcom/audio-caf/msm8937/
+* 95ccc85 policy_hal: Fix mismerges
+* b24ef94 audio policy: fix capture indication to sound trigger service.
+* 3f05588 audio policy: fix media volume after ringtone
+* 1e29be0 Revert "hal: Add abstraction for soundtrigger session"
+* 8c2743e hal: Don't try to record using 3-mic unless we mean it
+* a8490ea hal: Haxed header
+* ab64a44 audio: Fix flac offload not working
+* bd04719 hal: Fix build with HDMI disabled
+* f4e5f48 audio: Fix complilation warnings under Clang
+* 1394524 msm8996: fix werror when AUDIO_FEATURE_ENABLED_DTS_EAGLE is enabled
+* 04ed235 audio: Extend platform parser to allow device name aliasing
+* 326d03c hal: post_proc: enabled / disable volume listener based on prop
+* 966b853 hal: Support the audio amplifier hook
+* 284d304 hal: Allow building hardware audio encoders
+* 7d10d9a audio: Use direct project pathmap
 
+#### hardware/qcom/display-caf/msm8937/
+* 3dfb72a sdm: Always include kernel headers
+* 3c389e0 Fix duplicate copy file rules
+* 5ab047e display: Cleanup flags
+* 381813d Don't build lights module if vendor supplies it
+* 8908ec8 display: Use project pathmap
 
- ▪ project frameworks/base/
- ▪ 889a1ca set AnimationScale to 0.0
- ▪ 28e30ed Merge pull request #52 from ResurrectionRemix/nougat
- ▪ 0e9859f Automatic translation import
+#### hardware/qcom/media-caf/msm8937/
+* 64e0fc1 mm-video: Disable proprietary extension
+* becaa72 venc: Fix VQZip issue
+* d322c9f vidc: Fix makefiles
+* 0e5dd32 media: Avoid collision with FFMPEG plugin
+* 671cbd6 media: Use project pathmap
 
- ▪ project hardware/qcom/audio-caf/msm8937/
- ▪ 95ccc85 policy_hal: Fix mismerges
- ▪ b24ef94 audio policy: fix capture indication to sound trigger service.
- ▪ 3f05588 audio policy: fix media volume after ringtone
- ▪ 1e29be0 Revert "hal: Add abstraction for soundtrigger session"
- ▪ 8c2743e hal: Don't try to record using 3-mic unless we mean it
- ▪ a8490ea hal: Haxed header
- ▪ ab64a44 audio: Fix flac offload not working
- ▪ bd04719 hal: Fix build with HDMI disabled
- ▪ f4e5f48 audio: Fix complilation warnings under Clang
- ▪ 1394524 msm8996: fix werror when AUDIO_FEATURE_ENABLED_DTS_EAGLE is enabled
- ▪ 04ed235 audio: Extend platform parser to allow device name aliasing
- ▪ 326d03c hal: post_proc: enabled / disable volume listener based on prop
- ▪ 966b853 hal: Support the audio amplifier hook
- ▪ 284d304 hal: Allow building hardware audio encoders
- ▪ 7d10d9a audio: Use direct project pathmap
+#### packages/apps/Browser/
+* b565222 Search engines: Add DuckDuckGo FR
 
- ▪ project hardware/qcom/display-caf/msm8937/
- ▪ 3dfb72a sdm: Always include kernel headers
- ▪ 3c389e0 Fix duplicate copy file rules
- ▪ 5ab047e display: Cleanup flags
- ▪ 381813d Don't build lights module if vendor supplies it
- ▪ 8908ec8 display: Use project pathmap
+#### packages/apps/Dialer/
+* 9fb8fc8 Automatic translation import
 
- ▪ project hardware/qcom/media-caf/msm8937/
- ▪ 64e0fc1 mm-video: Disable proprietary extension
- ▪ becaa72 venc: Fix VQZip issue
- ▪ d322c9f vidc: Fix makefiles
- ▪ 0e5dd32 media: Avoid collision with FFMPEG plugin
- ▪ 671cbd6 media: Use project pathmap
+#### packages/apps/OmniSwitch/
+* e689ad1 Automatic translation import
 
- ▪ project packages/apps/Browser/
- ▪ b565222 Search engines: Add DuckDuckGo FR
+#### packages/apps/Settings/
+* 2f64551 Merge pull request #656 from micky387/nougat
+* c3ac7ed Settings: Set root access options appropriately
+* 8fb6da9 Merge pull request #6 from ResurrectionRemix/nougat
+* 1e75929 Automatic translation import
 
- ▪ project packages/apps/Dialer/
- ▪ 9fb8fc8 Automatic translation import
+#### vendor/cm/
+* cef3403 Update CHANGELOG.mkdn
+* 3b0b0ee Update Android.mk
 
- ▪ project packages/apps/OmniSwitch/
- ▪ e689ad1 Automatic translation import
+01/05/2017
+============
 
- ▪ project packages/apps/Settings/
- ▪ 2f64551 Merge pull request #656 from micky387/nougat
- ▪ c3ac7ed Settings: Set root access options appropriately
- ▪ 8fb6da9 Merge pull request #6 from ResurrectionRemix/nougat
- ▪ 1e75929 Automatic translation import
+#### android/
+* 508bf29 Update default.xml
+* dfa1adc LineageOS
+* a671d1d Track AOSP for unmodified external projects
 
- ▪ project vendor/cm/
- ▪ cef3403 Update CHANGELOG.mkdn
- ▪ 3b0b0ee Update Android.mk
+#### build/
+* a718344 buildinfo: fix
 
- ▼ 01/05/2017
+#### device/oppo/msm8939-common/
+* 398fe7e msm8939: Cleanup dependencies
 
+#### external/zlib/
+* b666691 Revert "Upgrade to zlib 1.2.10."
 
- ▪ project android/
- ▪ 508bf29 Update default.xml
- ▪ dfa1adc LineageOS
- ▪ a671d1d Track AOSP for unmodified external projects
+#### frameworks/base/
+* 4a9b73b Merge pull request #50 from ResurrectionRemix/nougat
+* 8be9ce2 Automatic translation import
+* 6a6a5c9 Automatic translation import
+* dc0a920 Merge pull request #48 from ResurrectionRemix/nougat
 
- ▪ project build/
- ▪ a718344 buildinfo: fix
+#### kernel/oppo/msm8939/
+* f47300a defconfigs: we are LineageOS
 
- ▪ project device/oppo/msm8939-common/
- ▪ 398fe7e msm8939: Cleanup dependencies
+#### packages/apps/Dialer/
+* e5b717b Automatic translation import
 
- ▪ project external/zlib/
- ▪ b666691 Revert "Upgrade to zlib 1.2.10."
+#### packages/apps/OmniSwitch/
+* 62de222 Automatic translation import
 
- ▪ project frameworks/base/
- ▪ 4a9b73b Merge pull request #50 from ResurrectionRemix/nougat
- ▪ 8be9ce2 Automatic translation import
- ▪ 6a6a5c9 Automatic translation import
- ▪ dc0a920 Merge pull request #48 from ResurrectionRemix/nougat
+#### packages/apps/Settings/
+* e91ec63 Merge pull request #5 from ResurrectionRemix/nougat
+* c572c78 Automatic translation import
+* e92aaf1 Automatic translation import
+* ab6b49a Merge pull request #4 from ResurrectionRemix/nougat
 
- ▪ project kernel/oppo/msm8939/
- ▪ f47300a defconfigs: we are LineageOS
+#### packages/apps/Snap/
+* 3f92dde Snap: Remove storage menu if no external storage available
 
- ▪ project packages/apps/Dialer/
- ▪ e5b717b Automatic translation import
+01/04/2017
+============
 
- ▪ project packages/apps/OmniSwitch/
- ▪ 62de222 Automatic translation import
+#### device/oppo/msm8939-common/
+* 177cff1 msm8939-common: Rebrand to LineageOS
 
- ▪ project packages/apps/Settings/
- ▪ e91ec63 Merge pull request #5 from ResurrectionRemix/nougat
- ▪ c572c78 Automatic translation import
- ▪ e92aaf1 Automatic translation import
- ▪ ab6b49a Merge pull request #4 from ResurrectionRemix/nougat
+#### device/oppo/r7plus/
+* 8de6212 r7plus: Rebrand to LineageOS
 
- ▪ project packages/apps/Snap/
- ▪ 3f92dde Snap: Remove storage menu if no external storage available
+#### external/zlib/
+* b934bc0 Upgrade to zlib 1.2.10.
+
+#### frameworks/base/
+* 61a323e Ability to enable/disable settings drawer [1/2]
+* 800eabd Settings: Disable Drawer
+* b6b7d6c Added NULL check for Action Bar
+
+#### packages/apps/Settings/
+* 16d90ca Settings: Ability to enable/disable settings drawer [2/2]
+* 2ec58e8 Remove duplicate wake on plug preference
+* 1c40554 Fix typo
+* 1a39f2f Merge pull request #3 from ResurrectionRemix/nougat
+* a3010d6 Edit high school student style strings
+* 7504f8e Settings:Add Maintainer Name in About Device
+
+#### packages/apps/Snap/
+* da58793 Add PREVENT_POWER_KEY to fix Crash when using 'Power Shutter'
+
+01/03/2017
+============
+
+#### android/
+* 74148b3 Update default.xml
+* ce1caa4 duplicate delete
+
+#### frameworks/base/
+* ee86abb Merge pull request #46 from ResurrectionRemix/nougat
+* dfa0a45 Clean up Pulse Tile
+* 3506bda Language toggle QS
+* d8fb9dc Fix battery bug on Header DateTime Positions
+* d99f10d Header Date+Time positions [1/2]
+* 0aa98ca QS Header Icon settings [1/2]
+
+#### hardware/qcom/display-caf/msm8996/
+* 12980ba hwc2: Only set display_width and display_height when equal to zero
+
+#### packages/apps/Settings/
+* 67c5b03 Header items + Date time Positions [2/2]
+* c5cf36f Fix maintainers list
+* 90ac31a Merge pull request #2 from ResurrectionRemix/nougat
+* 248fb08 Fix maintainers list
+* 05194ad Add configurations shortcut to settings homescreen activities - fix other shortcut icon drawables
+
+#### vendor/cm/
+* b54a541 merge last commits
+
+01/02/2017
+============
+
+#### android/
+* d7f45c3 Update default.xml
+
+#### build/
+* 8b075ee Update ota_from_target_files.py
+* 20e5c4f Update edify_generator.py
+* 66bdae2 Update envsetup.sh
+* 51d05cf Update Makefile
+
+#### device/oppo/msm8939-common/
+* d604e55 Enabling CLANG compilation and fixing all resulting errors
+
+#### frameworks/base/
+* 895b6f4 Merge pull request #44 from ResurrectionRemix/nougat
+
+#### packages/apps/Settings/
+* da98049 Merge pull request #1 from ResurrectionRemix/nougat
+* cae9d3e Add configurations shortcut to settings icon - fix other shortcut icon drawables
+
+01/01/2017
+============
+
+#### frameworks/opt/telephony/
+* 0663988 SubscriptionController: Make sure cis are not null
+
+#### packages/apps/Settings/
+* 3cdc522 Automatic translation import
+
+#### vendor/cmsdk/
+* 13bd2b7 cmsdk: Cyanogen >> Lineage
+* f66111d cmsdk: Deprecate STATS_COLLECTION_REPORTED CMSetting
+
+12/31/2016
+============
+
+#### device/oppo/msm8939-common/
+* 7db13b4 Allow power HAL to enable/disable big CPU cluster.
+
+#### frameworks/base/
+* 66a2ff3 Battery custom charging symbol near pct: show also on keyguard
+* e3aaed7 [2/2] frameworks_base: show battery info on lockscreen when charging
+* 5040dbd Telephony: Don't crash for too long baseband version
+* f5fad23 SystemUI: Initialize state linked volume
+* cce9663 Battery icon: fix getDrawable for new Android API
+* bb4c629 [1/2] base: support separate encryption/lockscreen passwords
+* 1abbf65 Add wakelock option for flashlight
+* 1021798 StatusBarIconView: Enable notification icon count by default
+* 96fc51e SettingsProvider: Remove def_notif_count overlay
+* c535099 Automatic translation import
+
+#### packages/apps/OmniSwitch/
+* 3a0cb30 Automatic translation import
+
+#### packages/apps/Settings/
+* bc0b85f show battery info on lockscreen when charging [2/2]
+* a962dc8 statusbar icons: Enable notification icon count by default
+* b4b4104 Automatic translation import
+* aa06c52 Expose option to change the device hostname.
+* 80f92ae Remove LED pulsation when device isn't capable of it
+* f6dde61 Settings: display: Add wake on plug switch
+* 7510868 Merge pull request #652 from lordeko/patch-2
+* 63863be Automatic translation import
+* e69760e Add Hlte maintainer
+
+12/30/2016
+============
+
+#### frameworks/base/
+* 2d1c9b7 Merge pull request #42 from ResurrectionRemix/nougat
+* b18d31f Automatic translation import
+
+#### hardware/qcom/audio-caf/msm8916/
+* 3790d0e Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916
+
+#### hardware/qcom/bootctrl/
+* 06fba05 bootctl: use TARGET_RECOVERY_UPDATER_LIBS macro for linking
+
+#### hardware/qcom/camera/
+* 702f237 camera: remove is-vendor-board-platform,QCOM check for kernel deps
+
+#### hardware/qcom/display-caf/msm8916/
+* eda3b27 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916
+
+#### hardware/qcom/display-caf/msm8996/
+* 420f0a1 hwc2: Handle empty lists in AcceptDisplayChanges
+* 46ff2a6 msm8996: hwc2: check for null layers in layer map
+* bb2d518 hwc2 : Fix layer updating flag
+* db11764 gralloc: Return an error if the buffer was not mapped
+* b6284a2 Revert "Revert "gralloc: Default to 601 color space""
+* 3a95498 hwc2: Workaround use after free by surfaceflinger
+* b2ba26f hwc2: Update composition types on AcceptDisplayChanges
+* 8ad5b82 Revert "gralloc: Default to 601 color space"
+* 4845057 gralloc: Disable UBWC for writeback buffers
+* f2225c8 hwc2: Initialize color mode to native
+* 6b50329 hwc2 : Allow only top most cursor layer
+* 57f81b6 Revert "gralloc: Return an error if the buffer was not mapped"
+* 7a794ad hwc2: Fix solid fill
+* 1cff9c5 sdm:hwc2: Store higher order mode id in case of clash
+* 4fddd51 gralloc: Return an error if the buffer was not mapped
+* 4c94a81 hwc2: Fix retire fences
+* d0b819c hwc2: Always store a release fence if a layer is presented
+* 47fb16d hwc2: Use current frames retire fence only for the primary
+* 81b1d0b 8996/HWC2: Return this frame's retire fence
+* c71ad4a hwc2: Remove default mode application at boot.
+* 74c49b7 hwc2: Support HWC2_CAPABILITY_SKIP_CLIENT_COLOR_TRANSFORM
+* 2b80b32 Merge tag 'LA.UM.5.5.r1-02200-8x96.0' of git://codeaurora.org/platform/hardware/qcom/display into caf
+
+#### hardware/qcom/media-caf/msm8916/
+* 4c3361b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916
+
+#### packages/apps/OmniSwitch/
+* 882ca3e Automatic translation import
+
+#### packages/apps/Settings/
+* a5f581c Automatic translation import
+* 1851a32 Merge pull request #650 from jhenrique09/patch-2
+
 
 01-04-2017
 ============
