@@ -110,11 +110,11 @@ EOF
                 adb wait-for-sideload
                 adb sideload $ZIPPATH
             fi
-            return $?
+            rm /tmp/command
         else
             echo "The connected device does not appear to be $CM_BUILD, run away!"
         fi
-        rm /tmp/command
+        return $?
     else
         echo "Nothing to eat"
         return 1

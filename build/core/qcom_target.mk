@@ -1,4 +1,3 @@
-
 # Target-specific configuration
 
 # Bring in Qualcomm helper macros

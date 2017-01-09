@@ -105,6 +105,16 @@
 * 794dbf1 fix denials for rootfs:lnk_file
 
 #### vendor/cm/
+* 61a56e1 Enable Google Assistant on all devices.
+* 1a28837 build: include lineage releasekey in recovery
+* b90061c build: remove deprecated recovery keys
+* cd0c0cf extract_utils: Update smali/backsmali to v2.2b4
+* 887b076 extract_utils: Update backsmali command
+* 99f9612 envsetup: Fix check for deprecated CM device tree
+* 1034b1d tools: getb64key - print the base64 version of a PEM public key file
+* 0a4087f vendor: Add a task for getting prebuilts via http
+* 62e1795 cm: support lineage device trees
+* d4502ed Update github changelog
 * 006bec3 Update common.mk
 * 1ebdbb8 Update common.mk
 * 43069e2 Update common.mk
@@ -127,7 +137,7 @@
 * 7271586 Create http_prebuilt.mk
 * 7c3eecd Update config.mk
 
-01/07/2017
+01-07-2017
 ============
 
 #### device/oppo/msm8939-common/
@@ -152,8 +162,19 @@
 #### packages/apps/Settings/
 * 1c032d2 Automatic translation import
 
-01/06/2017
+
+01-06-2017
 ============
+
+#### android/
+* e7fb235 Merge pull request #89 from MobiusM/nougat
+* 85e8fb9 We are in 2017
+
+#### device/google/shamrock/
+* 4fd7106 shamrock: Disable HAL3 support for camera
+
+#### device/lge/hammerhead/
+* 4bacb98 hammerhead: Rebrand to LineageOS (2/2)
 
 #### frameworks/base/
 * 889a1ca set AnimationScale to 0.0
@@ -206,20 +227,21 @@
 * 8fb6da9 Merge pull request #6 from ResurrectionRemix/nougat
 * 1e75929 Automatic translation import
 
-#### vendor/cm/
-* cef3403 Update CHANGELOG.mkdn
-* 3b0b0ee Update Android.mk
-
-01/05/2017
+01-05-2017
 ============
 
 #### android/
+* 051a962 Update README.mkdn
 * 508bf29 Update default.xml
 * dfa1adc LineageOS
 * a671d1d Track AOSP for unmodified external projects
 
 #### build/
+* 75c937b Merge branch 'fix-maintainer-name' into nougat
 * a718344 buildinfo: fix
+
+#### device/google/shamrock/
+* e0e6e7e shamrock: Switch to Camera2 App
 
 #### device/oppo/msm8939-common/
 * 398fe7e msm8939: Cleanup dependencies
@@ -251,11 +273,24 @@
 #### packages/apps/Snap/
 * 3f92dde Snap: Remove storage menu if no external storage available
 
-01/04/2017
+#### vendor/cm/
+* d23e6a6 Update github changelog
+
+#### vendor/lge/
+* 0f69140 revert: d850/d851/d852/d855/ls990/vs985: Regenerate makefiles
+
+01-04-2017
 ============
+
+#### android/
+* 33a6a4a Merge pull request #87 from bhb27/nougat_fix
+* 3d739bd cm: Track AOSP for unmodified external projects
 
 #### device/oppo/msm8939-common/
 * 177cff1 msm8939-common: Rebrand to LineageOS
+
+#### build/
+* fc423c9 buildinfo: fix
 
 #### device/oppo/r7plus/
 * 8de6212 r7plus: Rebrand to LineageOS
@@ -279,7 +314,7 @@
 #### packages/apps/Snap/
 * da58793 Add PREVENT_POWER_KEY to fix Crash when using 'Power Shutter'
 
-01/03/2017
+01-03-2017
 ============
 
 #### android/
@@ -296,6 +331,9 @@
 
 #### hardware/qcom/display-caf/msm8996/
 * 12980ba hwc2: Only set display_width and display_height when equal to zero
+
+#### kernel/lge/hammerhead/
+* a4ba671 hammerhead: Rebrand to LineageOS (1/2)
 
 #### packages/apps/Settings/
 * 67c5b03 Header items + Date time Positions [2/2]
@@ -467,6 +505,9 @@
 * cbd65e4 Merge pull request #62 from AndropaX/patch-1
 * 91eea10 Add experimental build type
 
+#### vendor/lge/
+* db28f82 d850/d851/d852/d855/ls990/vs985: Regenerate makefiles
+
 01-02-2017
 ============
 
@@ -487,6 +528,12 @@
 * bc0a136 Build: Cyanogen >> Lineage * Change necessary bits to support our project move
 * aabec1c build: envsetup: Ensure that we can always run roomservice
 * 39e71af core: finish using PRIVATE_RECOVERY_OUT rather than hard-coding "RECOVERY"
+
+#### frameworks/opt/telephony/
+* 0663988 SubscriptionController: Make sure cis are not null
+
+#### packages/apps/ResurrectionStats/
+* d686cf1 Automatic translation import
 
 #### packages/apps/Settings/
 * 3cdc522 Automatic translation import
@@ -544,6 +591,9 @@
 12-30-2016
 ============
 
+#### device/lge/hammerhead/
+* b174a4f hammerhead: sepolicy: Allow HDCP for wifi display / casting
+
 #### frameworks/base/
 * b18d31f Automatic translation import
 
@@ -555,6 +605,30 @@
 
 #### hardware/qcom/display-caf/msm8916/
 * eda3b27 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916
+
+#### hardware/qcom/display-caf/msm8996/
+* 420f0a1 hwc2: Handle empty lists in AcceptDisplayChanges
+* 46ff2a6 msm8996: hwc2: check for null layers in layer map
+* bb2d518 hwc2 : Fix layer updating flag
+* db11764 gralloc: Return an error if the buffer was not mapped
+* b6284a2 Revert "Revert "gralloc: Default to 601 color space""
+* 3a95498 hwc2: Workaround use after free by surfaceflinger
+* b2ba26f hwc2: Update composition types on AcceptDisplayChanges
+* 8ad5b82 Revert "gralloc: Default to 601 color space"
+* 4845057 gralloc: Disable UBWC for writeback buffers
+* f2225c8 hwc2: Initialize color mode to native
+* 6b50329 hwc2 : Allow only top most cursor layer
+* 57f81b6 Revert "gralloc: Return an error if the buffer was not mapped"
+* 7a794ad hwc2: Fix solid fill
+* 1cff9c5 sdm:hwc2: Store higher order mode id in case of clash
+* 4fddd51 gralloc: Return an error if the buffer was not mapped
+* 4c94a81 hwc2: Fix retire fences
+* d0b819c hwc2: Always store a release fence if a layer is presented
+* 47fb16d hwc2: Use current frames retire fence only for the primary
+* 81b1d0b 8996/HWC2: Return this frame's retire fence
+* c71ad4a hwc2: Remove default mode application at boot.
+* 74c49b7 hwc2: Support HWC2_CAPABILITY_SKIP_CLIENT_COLOR_TRANSFORM
+* 2b80b32 Merge tag 'LA.UM.5.5.r1-02200-8x96.0' of git://codeaurora.org/platform/hardware/qcom/display into caf
 
 #### hardware/qcom/media-caf/msm8916/
 * 4c3361b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.10' into cm-14.1-caf-8916
@@ -618,6 +692,12 @@
 12-28-2016
 ============
 
+#### device/google/shamrock/
+* a01ce78 shamrock: Update camera configs
+* 7d6e00d shamrock: Set monotonic property
+* 51da3e5 shamrock: Switch to opensource OMX
+* 1dfe557 shamrock: Update audio configs
+
 #### frameworks/base/
 * eaf7433 Automatic translation import
 
@@ -655,6 +735,12 @@
 #### hardware/qcom/audio-caf/msm8916/
 * 9a6477e Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.00.00.254.015 on remote branch
 
+#### hardware/qcom/display-caf/msm8937/
+* b0c9b05 Merge 0df8ecaf758043a94e1e85cab49f950ffbe5b56b on remote branch
+
+#### hardware/qcom/media-caf/msm8937/
+* c1e1786 Merge 0321f7bad73215ee650eae821ca2200165c8e0a2 on remote branch
+
 #### packages/apps/CMParts/
 * f086830 CMParts : Fix battery styles
 
@@ -679,6 +765,9 @@
 12-26-2016
 ============
 
+#### build/
+* abf90bd Show rom build-type info on flash script
+
 #### frameworks/base/
 * 562b258 Merge pull request #163 from AndropaX/patch-3
 * 063aae9 Use round icons
@@ -697,6 +786,7 @@
 * 248a48f Automatic translation import
 
 #### packages/apps/Settings/
+* b50fd13 Improve build type info & edit strings
 * fd39d81 Automatic translation import
 
 #### vendor/cm/
@@ -839,6 +929,9 @@
 * 250aa13 Add maintainer for Moto G4 Play (harpia)
 * 4b01040 Update resurrection_device_maintainers_strings.xml
 
+#### packages/apps/Snap/
+* 2064b85 Snap: make openLegacy an option
+
 #### vendor/cm/
 * 9fc50c0 Add Xmas exclusive before holiday build-type
 * 8d59e5e Script: Add 3 more build-type
@@ -867,12 +960,26 @@
 * 04d4055 Revert "cmfm: Use FileProvider for serving files"
 
 #### packages/apps/Settings/
+* 4b01040 Update resurrection_device_maintainers_strings.xml
 * a126579 remove double i9305 entry
 * 4da4fdd Revert "Hide Toast Animation settings for now"
 * 85a120f Hide Toast Animation settings for now
 * 7cfa215 Edit a String
 * 4446887 Battery Saver Easy Toggle [2/2]
 * 4d59cb7 Settings: add back all keyboard IME features back (2/2)
+
+#### packages/apps/Snap/
+* 1a7d451 Snap: update caf icons
+* d58b217 Snap: prevent NPE when checking if controls are visible
+* c2427aa Always set JPEG quality.
+* 95b4bc9 Initialize focus manager in onResume().
+* f29da12 Modernize look of review controls.
+* e600930 Clean up module switcher.
+* a62bda4 Stop data loader on activity destroy.
+* 7bcdf0a Improve RTL layout behaviour.
+* 2bf3a05 Use transparent navigation bar.
+* 3acc722 Use material versions of share/delete/edit icons.
+* 1e7ddd0 Fix some photo UI layout issues.
 
 #### packages/apps/Stk/
 * 426dd82 Stk: New launcher icon
@@ -891,6 +998,7 @@
 ============
 
 #### build/
+* b51f91f Fix Typos
 * 74d03b6 Merge pull request #14 from bhb27/nougat
 * bf7df66 Build: call rr_variant and changelog after export ANDROID_BUILD_TOP
 * b08ad3a Add hardware & software information to flash script
@@ -1015,6 +1123,11 @@
 * 400ba56 Build : Add build type chooser script
 
 #### frameworks/opt/telephony/
+* cd4f31a Convert multi_rat_capable property into an old RIL feature.
+* 29969e4 telephony: Improve compatibility for older DSDS stacks
+* 2423528 telephony: Set multi-rat default to true.
+* 2006fd9 SubscriptionController: Default to DDS flexmap triggering
+* f56c0bf telephony: Override nw mode on creation and when trying to calculate nw type.
 * 18a572d Fix crash when importing contacts from SIM in Contacts app
 
 #### hardware/qcom/audio-caf/msm8916/
@@ -1022,6 +1135,9 @@
 
 #### hardware/qcom/audio-caf/msm8974/
 * a0a31d2 hal: Make HUAWEI_SOUND_PARAM_PATH a board flag
+
+#### hardware/qcom/display-caf/msm8937/
+* 0df8eca Promotion of display.lnx.3.0.c2-00009.
 
 #### hardware/qcom/fm/
 * d415f9c Automatic translation import
@@ -1073,6 +1189,9 @@
 * 3651dcd Automatic translation import
 
 #### vendor/cm/
+* 5a87cf3 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_vendor_resurrection into nougat-oms
+* fc9df6e Merge pull request #59 from RMarchetto96/patch-1
+* 1547e76 Update common_full.mk
 * 26dc7b1 Merge pull request #58 from bhb27/nougat
 * 2398bca vendor: fix changelog incompatibility with rr variant
 * 97db39a Change to unofficial build type as default
@@ -1114,6 +1233,9 @@
 
 #### hardware/qcom/audio-caf/msm8916/
 * 4c11461 Merge "hal: unload the modem image based on IS_ONLINE event"
+
+#### hardware/qcom/media-caf/msm8937/
+* 0321f7b Promotion of video-userspace.lnx.2.1.c1-00027.
 
 #### packages/apps/CMParts/
 * 6ec9dc7 Automatic translation import
@@ -1179,6 +1301,7 @@
 * fe5ea06 shamrock: switch to OSS audio hal
 
 #### packages/apps/Settings/
+* d718dc0 Add flounder
 * 737c37b Add flounder maintainer
 
 #### packages/apps/Snap/
@@ -1187,7 +1310,12 @@
 #### packages/apps/ThemeChooser/
 * 4d5fd9b Automatic translation import
 
+#### packages/services/Telecomm/
+* 8a4a7f1 [2/6] Breathing missedcall/sms/voicemail
+
 #### packages/services/Telephony/
+* 3764bde [3/6] Breathing missedcall/sms/voicemail
+* b6d409a Fix Lte Tile
 * 24fc585 Automatic translation import
 
 #### vendor/cmsdk/
@@ -1298,6 +1426,9 @@
 12-17-2016
 ============
 
+#### android/
+* bf56192 Update README.mkdn
+
 #### frameworks/base/
 * 240d9cf Remove Uneeded Style
 
@@ -1306,6 +1437,9 @@
 
 #### packages/providers/ContactsProvider/
 * bd77476 dbhelper: ignore 'subscription' column during database upgrade
+
+#### vendor/cm/
+* 6bfc168 Update github changelog and readme
 
 12-16-2016
 ============
@@ -1317,6 +1451,12 @@
 
 #### device/google/shamrock/
 * b8d87f0 shamrock: Update build fingerprint to N3F55
+
+#### hardware/qcom/display-caf/msm8937/
+* c389835 libmemtrack: Revert back the AOSP copyright years to 2013
+
+#### hardware/qcom/display-caf/msm8996/
+* c389835 libmemtrack: Revert back the AOSP copyright years to 2013
 
 #### device/qcom/common/
 * 5a54ae4 extractors: Split 32/64 makefiles
@@ -1363,6 +1503,15 @@
 #### hardware/qcom/audio-caf/msm8916/
 * 6a5ac32 Merge "audiopolicy: do not set FM volume during device connection/disconnection"
 
+#### hardware/qcom/audio-caf/msm8937/
+* 180ca81 Merge 443fa2a98a4ab554b13adfcfc555720f0b960ba7 on remote branch
+
+#### hardware/qcom/display-caf/msm8937/
+* 83f9227 Merge 1460433e158cbba1d962e9034c7b4d89a48044d0 on remote branch
+
+#### hardware/qcom/display-caf/msm8996/
+* 83f9227 Merge 1460433e158cbba1d962e9034c7b4d89a48044d0 on remote branch
+
 #### packages/apps/PhoneCommon/
 * 42419ca Automatic translation import
 
@@ -1393,6 +1542,9 @@
 #### frameworks/av/
 * 5f72b22 soundtrigger: fix memory corruption
 * bca4f83 Merge branch 'cm-14.1' of https://github.com/CyanogenMod/android_frameworks_av into nougat
+
+#### hardware/qcom/display-caf/msm8937/
+* 821a952 libmemtrack: Revert back the AOSP copyright years to 2013
 
 #### frameworks/base/
 * 2006790 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into nougat
@@ -1443,13 +1595,28 @@
 ============
 
 #### android/
+* 152a27b 7.1.1_r6
 * 7ca4fa6 cm: android-7.1.1_r4 -> android-7.1.1_r6
 
 #### build/
+* 9664207 Merge branch 'cm-14.1' of https://github.com/CyanogenMod/android_build into nougat
 * 4a0aeb8 Merge tag 'android-7.1.1_r6' into cm-14.1
 
 #### device/lge/hammerhead/
 * 91050cb hammerhead: Switch to cmhw vibrator implementation
+
+#### frameworks/av/
+* bca4f83 Merge branch 'cm-14.1' of https://github.com/CyanogenMod/android_frameworks_av into nougat
+
+#### frameworks/base/
+* 2006790 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into nougat
+* 31f0227 Store Network Mode selected in subId Table.
+* f6c5a04 Merge tag 'android-7.1.1_r6' into HEAD
+* 75ccdc7 SystemUI: Don't vibrate on touchscreen camera gesture
+* 06d1641 Automatic translation import
+* 3efb79b Automatic translation import
+* 4098d8f core: cm_symbols: Remove deprecated <private-symbols>
+* 9153de0 Add large battery percentage and also the switch for it. (#159)
 
 #### frameworks/opt/telephony/
 * 225d8cf telephony: Respect user nw mode, handle DSDS non-multi-rat.
@@ -1467,10 +1634,23 @@
 #### packages/apps/CellBroadcastReceiver/
 * 8d4dfa1 Fixes and cleanups after 7.1.0/7.1.1 merge
 
+#### packages/apps/Messaging/
+* 7ffe556 Merge branch 'cm-14.1' of https://github.com/cyanogenmod/android_packages_apps_Messaging into HEAD
+
 #### packages/apps/PhoneCommon/
 * 9a66046 Automatic translation import
 
 #### packages/apps/Settings/
+* 6d9c752 Add otus maintainer (#634)
+* 8a9c8bc Update Build ID
+* a1beaf8 Always show band 0 (Automatic)
+* 593d0fc Settings: Fix removal of notification pulse LED preference
+* bff034f Automatic translation import
+* 774f1c4 Settings: Set summary for zen priority notif preference
+* 2934a5f Automatic translation import
+* ae6df95 Automatic translation import
+* 9a07d12 Settings: Remove our storage changes
+* 366ed4c Battery percentage large text switch [2/2] (#632)
 * f388c6e OPPO R7Plus Maintainer (#633)
 
 #### packages/apps/SetupWizard/
@@ -1489,6 +1669,15 @@
 * c9c7aa3 Telephony: add external network selection activity
 * 1219742 PhoneToggler: persist nw mode change
 * 2eff9b5 Port network mode toggle from CM12
+
+#### vendor/cm/
+* 773acd6 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_vendor_resurrection into nougat-oms
+* 09189d5 Add Reliance Jio India IMS volte apn's
+* 558a43b Fix Reliance Jio India APNs.
+* bbe9df4 cm: bring back storage manager
+* bb09b62 Add permissions & sepolicy for HBM
+* 52660e7 repopick: Avoid failing on commits lookup
+* cf1fcc2 cm: build: envsetup: Add mmmap command
 
 #### vendor/cmsdk/
 * 5be83e5 Revert "cmsdk: Add device-specific strings"
@@ -1547,6 +1736,9 @@
 
 #### device/lge/hammerhead/
 * a4d5ba9 hammerhead: Remove duplicate livedisplay permissions
+
+#### hardware/ti/wlan/
+* f2267c4 wl12xx: Common WLAN KM build target for reuse by devices
 
 #### packages/apps/AudioFX/
 * 7f84f53 Automatic translation import
@@ -1612,8 +1804,11 @@
 #### hardware/qcom/audio-caf/msm8916/
 * 3941619 policy_hal: Fix mismerges
 
+
 #### hardware/qcom/audio-caf/msm8937/
 * 1b182cc policy_hal: Fix mismerges
+
+* 2f2b935 Merge 50e0b79243db352a3dff04306a7aa04755de3413 on remote branch
 
 #### hardware/qcom/audio-caf/msm8952/
 * f3d5f7f policy_hal: Fix mismerges
