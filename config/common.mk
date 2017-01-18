@@ -193,6 +193,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMSettingsProvider \
     ExactCalculator \
+    OmniStyle \
     LiveLockScreenService \
     WeatherProvider \
     OmniSwitch \
