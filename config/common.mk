@@ -295,7 +295,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION = 7.1.1_r9
-ifneq ($(PF_BUILDTYPE),)
+ifneq ($(RR_BUILDTYPE),)
 PF_VERSION := PF-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(PF_BUILDTYPE)
 else
 PF_VERSION := PF-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
@@ -304,7 +304,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.pf.version=$(PF_VERSION) \
  ro.modversion=$(PF_VERSION) \
- pf.build.type=$(PF_BUILDTYPE) \
+ rr.build.type=$(PF_BUILDTYPE) \
  Default \
  pf.ota.version= $(shell date -u +%Y%m%d)
 
