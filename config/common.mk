@@ -188,8 +188,6 @@ PRODUCT_PACKAGES += \
     WeatherProvider \
     OmniStyle \
     OmniSwitch \
-    SoundRecorder \
-    Screencast \
     masquerade
 
 # Exchange support
@@ -291,8 +289,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION = 5.8.0
-RR_BUILDDTYPE = Default
+PRODUCT_VERSION = 5.8.1
 ifneq ($(RR_BUILDTYPE),)
 RR_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(RR_BUILDTYPE)
 else
