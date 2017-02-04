@@ -191,8 +191,6 @@ PRODUCT_PACKAGES += \
     LiveLockScreenService \
     WeatherProvider \
     OmniSwitch \
-    SoundRecorder \
-    Screencast \
     masquerade
 
 # Exchange support
