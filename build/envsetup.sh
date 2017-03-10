@@ -63,11 +63,12 @@ function breakfast()
             if [ -z "$variant" ]; then
                 variant="userdebug"
             fi
-            lunch lineage_$target-$variant
-            if [ $? -ne 0 ]; then
-                # try CM
+
+            if ! check_product lineage_$target && check_product cm_$target; then
                 echo "** Warning: '$target' is using CM-based makefiles. This will be deprecated in the next major release."
                 lunch cm_$target-$variant
+            else
+                lunch lineage_$target-$variant
             fi
         fi
     fi
@@ -814,6 +815,8 @@ function dopush()
     if [ $ret -ne 0 ]; then
         rm -f $OUT/.log;return $ret
     fi
+
+    is_gnu_sed=`sed --version | head -1 | grep -c GNU`
 
     # Install: <file>
     if [ $is_gnu_sed -gt 0 ]; then

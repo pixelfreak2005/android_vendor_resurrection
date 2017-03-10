@@ -25,9 +25,9 @@
     blurev=${rev}$(tput setaf 4)
     normal='tput sgr0'
 # input variables set the below the rest must be automatic
-source_tree="PF/"; #path here must be inside home directory
+source_tree="RR/"; #path here must be inside home directory
 changelog_path_name=vendor/cm/CHANGELOG.mkdn #changelog file path/name.extension
-source_name="PixelDroid Nougat" #Name to display in changelog.md top before version
+source_name="Resurrection Remix Nougat" #Name to display in changelog.md top before version
 # input variables end
 
 export Changelog=$HOME/$source_tree/$changelog_path_name

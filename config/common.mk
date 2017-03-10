@@ -48,6 +48,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# OMS THEMEINTERFACER
+PRODUCT_PACKAGES += \
+   ThemeInterfacer
+
 # Enable Google Assistant on all devices.
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opa.eligible_device=true
@@ -283,8 +287,13 @@ PRODUCT_BOOT_JARS += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
-    procrank \
+    procrank
+
+# Conditionally build in su
+ifeq ($(WITH_SU),true)
+PRODUCT_PACKAGES += \
     su
+endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -292,7 +301,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION = 7.1.1_r21
+PRODUCT_VERSION = 7.1.1_r25
 ifneq ($(RR_BUILDTYPE),)
 PF_VERSION := PF-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(PF_BUILDTYPE)
 else
